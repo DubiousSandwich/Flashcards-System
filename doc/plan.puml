@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class main{
+}
+
+class fileIO{
+Scanner scan
+File file
+
++ void readData()
++ void writeData()
+}
+
+class flashcard{
+String term
+String description
+
+void flipCard()
+
+}
+
+class deck{
+ArrayList<Flashcard> flashcards
+
+Flashcard getNextCard()
+void displayNextCard()
+}
+
+deck *-- flashcard
+
+@enduml
