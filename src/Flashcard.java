@@ -8,6 +8,13 @@ public class Flashcard {
         this.description = description;
     }
 
+    public String getTerm(){
+        return term;
+    }
+    public String getDescription(){
+        return description;
+    }
+
     @Override
     public String toString(){
         return term + ", " + description;
